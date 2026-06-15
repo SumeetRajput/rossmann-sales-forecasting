@@ -1,0 +1,50 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Raw data — too large for GitHub (38MB train.csv exceeds limits when combined)
+data/train.csv
+data/test.csv
+data/store.csv
+
+# MLflow internal data (huge SQLite + folders)
+outputs/mlruns/
+outputs/mlruns.db
+
+# Log files (regenerated every run)
+outputs/logs/
+
+# Pytest cache
+.pytest_cache/
+
+# DVC internals
+.dvc/cache
+.dvc/tmp
+
+# Heroku logs
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Trained models — large pickled binaries, excluded from Git
+outputs/models/*.pkl
+outputs/models/*.keras

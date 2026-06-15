@@ -1,0 +1,22 @@
+stages:
+  train:
+    cmd: python train.py --sample 0.2
+    deps:
+      - data/train.csv
+      - data/store.csv
+      - data/test.csv
+      - src/feature_engineering.py
+      - src/pipeline_builder.py
+      - src/data_loader.py
+      - train.py
+    params:
+      - data.sample_fraction
+      - data.validation_weeks
+      - model.random_forest
+      - model.gradient_boosting
+    metrics:
+      - outputs/metrics.json:
+          cache: false
+    outs:
+      - outputs/models/
+      - outputs/data/submission.csv

@@ -1,0 +1,23 @@
+data:
+  sample_fraction: 0.2
+  validation_weeks: 6
+
+model:
+  random_forest:
+    n_estimators: 300
+    max_depth: 20
+    min_samples_split: 4
+    min_samples_leaf: 2
+
+  gradient_boosting:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+
+lstm:
+  look_back: 14
+  epochs: 50
+  batch_size: 32
+  patience: 10
+  store_id: 1
