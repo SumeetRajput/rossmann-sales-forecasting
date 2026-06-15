@@ -205,5 +205,4 @@ heroku open
 
 ## Author
 
-**Sumeet Rajput** · NextHikes IT Solutions Sprint Project
-Final submission deadline: 15 June 2026
+**Sumeet Rajput** 
